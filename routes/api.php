@@ -32,5 +32,5 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::Resource('personnes', PersonneController::class);
 	Route::Resource('offre',OffreController::class);
 	Route::Resource('memberships',MembershipsController::class);
-	Route::Resource('memberships',NoterController::class);
+	Route::Resource('noter',NoterController::class);
 });
