@@ -1,10 +1,10 @@
 CREATE DATABASE IF NOT EXISTS brigadoondb;
 
 /*User recommanded for the app */
-CREATE USER IF NOT EXISTS 'database_admin'@'%' IDENTIFIED WITH mysql_native_password BY 'msnorgandeal';
+CREATE USER IF NOT EXISTS 'database_admin'@'%' IDENTIFIED BY 'msnorgandeal';
 GRANT ALL ON brigadoondb.* TO 'database_admin'@'%';
 
-CREATE USER IF NOT EXISTS 'app_admin'@'%' IDENTIFIED WITH mysql_native_password BY 'msnorgandeal';
+CREATE USER IF NOT EXISTS 'app_admin'@'%' IDENTIFIED BY 'msnorgandeal';
 GRANT SELECT, INSERT, UPDATE, DELETE ON brigadoondb.* TO 'app_admin'@'%';
 
 USE brigadoondb;
